@@ -1,10 +1,3 @@
-//
-//  TestyTests.swift
-//  TestyTests
-//
-//  Created by Tino on 25.03.24.
-//
-
 import XCTest
 @testable import Testy
 
