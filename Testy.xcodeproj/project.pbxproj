@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		202AE47B2BB5E47C00642416 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202AE47A2BB5E47C00642416 /* AppsView.swift */; };
+		202AE47D2BB5E4D600642416 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202AE47C2BB5E4D600642416 /* UsersView.swift */; };
 		2093C4DF2BB1AE3600B5A430 /* TestyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093C4DE2BB1AE3600B5A430 /* TestyApp.swift */; };
-		2093C4E12BB1AE3600B5A430 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093C4E02BB1AE3600B5A430 /* ContentView.swift */; };
+		2093C4E12BB1AE3600B5A430 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093C4E02BB1AE3600B5A430 /* AppView.swift */; };
 		2093C4E32BB1AE3600B5A430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2093C4E22BB1AE3600B5A430 /* Assets.xcassets */; };
 		2093C4E62BB1AE3600B5A430 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2093C4E52BB1AE3600B5A430 /* Preview Assets.xcassets */; };
 		2093C4F02BB1AE3600B5A430 /* TestyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093C4EF2BB1AE3600B5A430 /* TestyTests.swift */; };
+		20E71DD32BB4B2A100CF45A2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 20E71DD22BB4B2A100CF45A2 /* ComposableArchitecture */; };
+		20E71DD82BB4B5C700CF45A2 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DD72BB4B5C700CF45A2 /* AppReducer.swift */; };
+		20E71DDA2BB4CB8200CF45A2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DD92BB4CB8200CF45A2 /* AppRouter.swift */; };
+		20E71DDD2BB4CC9300CF45A2 /* OverviewReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DDC2BB4CC9300CF45A2 /* OverviewReducer.swift */; };
+		20E71DDF2BB4CCE000CF45A2 /* UsersReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DDE2BB4CCE000CF45A2 /* UsersReducer.swift */; };
+		20E71DE12BB4CCFC00CF45A2 /* AppsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE02BB4CCFC00CF45A2 /* AppsReducer.swift */; };
+		20E71DE32BB4D14200CF45A2 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE22BB4D14200CF45A2 /* OverviewView.swift */; };
+		20E71DE52BB556AB00CF45A2 /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE42BB556AB00CF45A2 /* SettingsReducer.swift */; };
+		20E71DE72BB557E300CF45A2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE62BB557E300CF45A2 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +43,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		202AE47A2BB5E47C00642416 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		202AE47C2BB5E4D600642416 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		2093C4DB2BB1AE3600B5A430 /* Testy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2093C4DE2BB1AE3600B5A430 /* TestyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyApp.swift; sourceTree = "<group>"; };
-		2093C4E02BB1AE3600B5A430 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2093C4E02BB1AE3600B5A430 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		2093C4E22BB1AE3600B5A430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2093C4E52BB1AE3600B5A430 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2093C4EB2BB1AE3600B5A430 /* TestyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2093C4EF2BB1AE3600B5A430 /* TestyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyTests.swift; sourceTree = "<group>"; };
 		2093C4F52BB1AE3600B5A430 /* TestyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20E71DD72BB4B5C700CF45A2 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		20E71DD92BB4CB8200CF45A2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		20E71DDC2BB4CC9300CF45A2 /* OverviewReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewReducer.swift; sourceTree = "<group>"; };
+		20E71DDE2BB4CCE000CF45A2 /* UsersReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersReducer.swift; sourceTree = "<group>"; };
+		20E71DE02BB4CCFC00CF45A2 /* AppsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsReducer.swift; sourceTree = "<group>"; };
+		20E71DE22BB4D14200CF45A2 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		20E71DE42BB556AB00CF45A2 /* SettingsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
+		20E71DE62BB557E300CF45A2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E71DD32BB4B2A100CF45A2 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +89,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201C28742BB5BF8B00ACB78E /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				20E71DDC2BB4CC9300CF45A2 /* OverviewReducer.swift */,
+				20E71DE22BB4D14200CF45A2 /* OverviewView.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		201C28752BB5BF9400ACB78E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				20E71DE62BB557E300CF45A2 /* SettingsView.swift */,
+				20E71DE42BB556AB00CF45A2 /* SettingsReducer.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		201C28762BB5BFA700ACB78E /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				20E71DDE2BB4CCE000CF45A2 /* UsersReducer.swift */,
+				202AE47C2BB5E4D600642416 /* UsersView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		202AE47E2BB5E50300642416 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				20E71DE02BB4CCFC00CF45A2 /* AppsReducer.swift */,
+				202AE47A2BB5E47C00642416 /* AppsView.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
 		2093C4D22BB1AE3600B5A430 = {
 			isa = PBXGroup;
 			children = (
 				2093C4DD2BB1AE3600B5A430 /* Testy */,
 				2093C4EE2BB1AE3600B5A430 /* TestyTests */,
 				2093C4DC2BB1AE3600B5A430 /* Products */,
+				20E71DD12BB4B2A100CF45A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				2093C4DE2BB1AE3600B5A430 /* TestyApp.swift */,
-				2093C4E02BB1AE3600B5A430 /* ContentView.swift */,
+				20E71DDB2BB4CC7E00CF45A2 /* Features */,
+				20E71DD62BB4B5BA00CF45A2 /* Home */,
 				2093C4E22BB1AE3600B5A430 /* Assets.xcassets */,
 				2093C4E42BB1AE3600B5A430 /* Preview Content */,
 			);
@@ -113,6 +173,34 @@
 			path = TestyTests;
 			sourceTree = "<group>";
 		};
+		20E71DD12BB4B2A100CF45A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		20E71DD62BB4B5BA00CF45A2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2093C4E02BB1AE3600B5A430 /* AppView.swift */,
+				20E71DD72BB4B5C700CF45A2 /* AppReducer.swift */,
+				20E71DD92BB4CB8200CF45A2 /* AppRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		20E71DDB2BB4CC7E00CF45A2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				202AE47E2BB5E50300642416 /* Apps */,
+				201C28762BB5BFA700ACB78E /* Users */,
+				201C28752BB5BF9400ACB78E /* Settings */,
+				201C28742BB5BF8B00ACB78E /* Overview */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +217,9 @@
 			dependencies = (
 			);
 			name = Testy;
+			packageProductDependencies = (
+				20E71DD22BB4B2A100CF45A2 /* ComposableArchitecture */,
+			);
 			productName = Testy;
 			productReference = 2093C4DB2BB1AE3600B5A430 /* Testy.app */;
 			productType = "com.apple.product-type.application";
@@ -201,6 +292,9 @@
 				Base,
 			);
 			mainGroup = 2093C4D22BB1AE3600B5A430;
+			packageReferences = (
+				20A5884C2BB38A1E005665BD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 2093C4DC2BB1AE3600B5A430 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,8 +337,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2093C4E12BB1AE3600B5A430 /* ContentView.swift in Sources */,
+				20E71DDD2BB4CC9300CF45A2 /* OverviewReducer.swift in Sources */,
+				2093C4E12BB1AE3600B5A430 /* AppView.swift in Sources */,
+				20E71DDA2BB4CB8200CF45A2 /* AppRouter.swift in Sources */,
+				20E71DE12BB4CCFC00CF45A2 /* AppsReducer.swift in Sources */,
 				2093C4DF2BB1AE3600B5A430 /* TestyApp.swift in Sources */,
+				20E71DE72BB557E300CF45A2 /* SettingsView.swift in Sources */,
+				20E71DDF2BB4CCE000CF45A2 /* UsersReducer.swift in Sources */,
+				20E71DE52BB556AB00CF45A2 /* SettingsReducer.swift in Sources */,
+				20E71DD82BB4B5C700CF45A2 /* AppReducer.swift in Sources */,
+				202AE47B2BB5E47C00642416 /* AppsView.swift in Sources */,
+				20E71DE32BB4D14200CF45A2 /* OverviewView.swift in Sources */,
+				202AE47D2BB5E4D600642416 /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +524,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.etino.Testy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,6 +555,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.etino.Testy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -566,6 +676,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20A5884C2BB38A1E005665BD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20E71DD22BB4B2A100CF45A2 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20A5884C2BB38A1E005665BD /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2093C4D32BB1AE3600B5A430 /* Project object */;
 }
