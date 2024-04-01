@@ -16,12 +16,11 @@ struct AppView: View {
             case .overview(let store):
                 OverviewView(store: store)
                     .navigationTitle("Overview")
-            case .users(let store):
-                UsersView(store: store)
-                    .navigationTitle("Users")
             case .apps(let store):
                 AppsView(store: store)
                     .navigationTitle("Apps")
+            default:
+                EmptyView()
             }
         }
         .safeAreaInset(edge: .bottom) {

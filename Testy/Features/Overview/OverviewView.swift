@@ -16,9 +16,7 @@ struct OverviewView: View {
                     store.send(.presentSettings)
                 }
         }
-        .sheet(
-            item: $store.scope(state: \.settings, action: \.settings)
-        ) { store in
+        .sheet(item: $store.scope(state: \.settings, action: \.settings)) { store in
             SettingsView(store: store)
         }
     }
