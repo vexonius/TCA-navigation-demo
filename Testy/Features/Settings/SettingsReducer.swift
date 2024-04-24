@@ -10,17 +10,23 @@ struct SettingsReducer {
 
     }
 
-    enum Action: Equatable {
+    enum Action: Equatable, ViewAction {
 
-        case presentApps
+        case view(View)
         case apps(PresentationAction<AppsReducer.Action>)
+
+        enum View {
+
+            case presentAppsTap
+
+        }
 
     }
 
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-            case .presentApps:
+            case .view(.presentAppsTap):
                 state.apps = AppsReducer.State()
 
                 return .none

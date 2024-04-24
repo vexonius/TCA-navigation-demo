@@ -1,6 +1,7 @@
 import SwiftUI
 import ComposableArchitecture
 
+@ViewAction(for: AppsReducer.self)
 struct AppsView: View {
 
     let store: StoreOf<AppsReducer>
@@ -12,7 +13,7 @@ struct AppsView: View {
                     .navigationTitle("Apps")
                 
                 Button("Update settings") {
-                    store.send(.updateSettings)
+                    send(.updateSettingsTap)
                 }
             }
         }

@@ -1,6 +1,7 @@
 import SwiftUI
 import ComposableArchitecture
 
+@ViewAction(for: SettingsReducer.self)
 struct SettingsView: View {
 
     @Bindable var store: StoreOf<SettingsReducer>
@@ -10,7 +11,7 @@ struct SettingsView: View {
             VStack {
                 Text("Apps")
                     .onTapGesture {
-                        store.send(.presentApps)
+                        send(.presentAppsTap)
                     }
             }
             .navigationTitle("Settings")

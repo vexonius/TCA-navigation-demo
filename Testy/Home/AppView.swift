@@ -9,11 +9,16 @@ struct AppView: View {
 
     var body: some View {
         NavigationStack(path: $store.scope(state: \.router, action: \.router)) {
+            VStack {
+                Button("Push Overview") {
+                    send(.overviewTap)
+                }
 
-            Button("Press me") {
-                send(.overviewTap)
+                Toggle(isOn: $store.toggle) {
+                    Text("Toggle me")
+                }
+                .padding(.horizontal)
             }
-
         } destination: { store in
             switch store.case {
             case .overview(let store):
