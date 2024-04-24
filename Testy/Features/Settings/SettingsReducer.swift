@@ -8,8 +8,6 @@ struct SettingsReducer {
 
         @Presents var apps: AppsReducer.State?
 
-        var notification: String?
-
     }
 
     enum Action: Equatable {
@@ -24,10 +22,6 @@ struct SettingsReducer {
             switch action {
             case .presentApps:
                 state.apps = AppsReducer.State()
-
-                return .none
-            case .apps(.presented(.updateSettings)):
-                state.notification = "Settings updated from Apps screen"
 
                 return .none
             default:

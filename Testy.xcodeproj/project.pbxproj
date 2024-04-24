@@ -14,7 +14,6 @@
 		2093C4E32BB1AE3600B5A430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2093C4E22BB1AE3600B5A430 /* Assets.xcassets */; };
 		2093C4E62BB1AE3600B5A430 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2093C4E52BB1AE3600B5A430 /* Preview Assets.xcassets */; };
 		2093C4F02BB1AE3600B5A430 /* TestyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093C4EF2BB1AE3600B5A430 /* TestyTests.swift */; };
-		209E383C2BB8732600BD7D19 /* BaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209E383B2BB8732600BD7D19 /* BaseApiClient.swift */; };
 		20E71DD32BB4B2A100CF45A2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 20E71DD22BB4B2A100CF45A2 /* ComposableArchitecture */; };
 		20E71DD82BB4B5C700CF45A2 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DD72BB4B5C700CF45A2 /* AppReducer.swift */; };
 		20E71DDA2BB4CB8200CF45A2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DD92BB4CB8200CF45A2 /* AppRouter.swift */; };
@@ -24,9 +23,7 @@
 		20E71DE32BB4D14200CF45A2 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE22BB4D14200CF45A2 /* OverviewView.swift */; };
 		20E71DE52BB556AB00CF45A2 /* SettingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE42BB556AB00CF45A2 /* SettingsReducer.swift */; };
 		20E71DE72BB557E300CF45A2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E71DE62BB557E300CF45A2 /* SettingsView.swift */; };
-		20FEA8A12BBAB5FD00378178 /* BaseApiClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8A02BBAB5FD00378178 /* BaseApiClientProtocol.swift */; };
 		20FEA8A42BBAB6B500378178 /* Get in Frameworks */ = {isa = PBXBuildFile; productRef = 20FEA8A32BBAB6B500378178 /* Get */; };
-		20FEA8A62BBADA1800378178 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8A52BBADA1800378178 /* SessionDelegate.swift */; };
 		20FEA8A82BBAE51A00378178 /* BaseClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8A72BBAE51A00378178 /* BaseClientTests.swift */; };
 		20FEA8AB2BBB059700378178 /* UsersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8AA2BBB059700378178 /* UsersClient.swift */; };
 		20FEA8AD2BBB061100378178 /* UsersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8AC2BBB061100378178 /* UsersProtocol.swift */; };
@@ -63,7 +60,6 @@
 		2093C4EB2BB1AE3600B5A430 /* TestyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2093C4EF2BB1AE3600B5A430 /* TestyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestyTests.swift; sourceTree = "<group>"; };
 		2093C4F52BB1AE3600B5A430 /* TestyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		209E383B2BB8732600BD7D19 /* BaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiClient.swift; sourceTree = "<group>"; };
 		20E71DD72BB4B5C700CF45A2 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		20E71DD92BB4CB8200CF45A2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		20E71DDC2BB4CC9300CF45A2 /* OverviewReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewReducer.swift; sourceTree = "<group>"; };
@@ -72,8 +68,6 @@
 		20E71DE22BB4D14200CF45A2 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		20E71DE42BB556AB00CF45A2 /* SettingsReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsReducer.swift; sourceTree = "<group>"; };
 		20E71DE62BB557E300CF45A2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		20FEA8A02BBAB5FD00378178 /* BaseApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiClientProtocol.swift; sourceTree = "<group>"; };
-		20FEA8A52BBADA1800378178 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 		20FEA8A72BBAE51A00378178 /* BaseClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClientTests.swift; sourceTree = "<group>"; };
 		20FEA8AA2BBB059700378178 /* UsersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersClient.swift; sourceTree = "<group>"; };
 		20FEA8AC2BBB061100378178 /* UsersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProtocol.swift; sourceTree = "<group>"; };
@@ -168,7 +162,6 @@
 		2093C4DD2BB1AE3600B5A430 /* Testy */ = {
 			isa = PBXGroup;
 			children = (
-				209E383A2BB8731500BD7D19 /* Client */,
 				2093C4DE2BB1AE3600B5A430 /* TestyApp.swift */,
 				20E71DDB2BB4CC7E00CF45A2 /* Features */,
 				20E71DD62BB4B5BA00CF45A2 /* Home */,
@@ -194,16 +187,6 @@
 				20FEA8B52BBB099800378178 /* UsersReducerTests.swift */,
 			);
 			path = TestyTests;
-			sourceTree = "<group>";
-		};
-		209E383A2BB8731500BD7D19 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				209E383B2BB8732600BD7D19 /* BaseApiClient.swift */,
-				20FEA8A02BBAB5FD00378178 /* BaseApiClientProtocol.swift */,
-				20FEA8A52BBADA1800378178 /* SessionDelegate.swift */,
-			);
-			path = Client;
 			sourceTree = "<group>";
 		};
 		20E71DD12BB4B2A100CF45A2 /* Frameworks */ = {
@@ -414,13 +397,10 @@
 				20E71DE12BB4CCFC00CF45A2 /* AppsReducer.swift in Sources */,
 				2093C4DF2BB1AE3600B5A430 /* TestyApp.swift in Sources */,
 				20E71DE72BB557E300CF45A2 /* SettingsView.swift in Sources */,
-				20FEA8A62BBADA1800378178 /* SessionDelegate.swift in Sources */,
-				209E383C2BB8732600BD7D19 /* BaseApiClient.swift in Sources */,
 				20FEA8AD2BBB061100378178 /* UsersProtocol.swift in Sources */,
 				20E71DDF2BB4CCE000CF45A2 /* UsersReducer.swift in Sources */,
 				20E71DE52BB556AB00CF45A2 /* SettingsReducer.swift in Sources */,
 				20E71DD82BB4B5C700CF45A2 /* AppReducer.swift in Sources */,
-				20FEA8A12BBAB5FD00378178 /* BaseApiClientProtocol.swift in Sources */,
 				202AE47B2BB5E47C00642416 /* AppsView.swift in Sources */,
 				20FEA8AB2BBB059700378178 /* UsersClient.swift in Sources */,
 				20FEA8B32BBB06EC00378178 /* User.swift in Sources */,

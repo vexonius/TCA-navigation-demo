@@ -1,3 +1,4 @@
+import Combine
 import Dependencies
 
 class UsersClient: UsersClientProtocol, DependencyKey {
@@ -5,10 +6,12 @@ class UsersClient: UsersClientProtocol, DependencyKey {
     static let liveValue: any UsersClientProtocol = UsersClient()
     static let testValue: any UsersClientProtocol = UsersClient()
 
-    @Dependency(\.baseApiClient) var client: any BaseApiClientProtocol
-
     func getUsers() async throws -> [UserResponse] {
-        try await client.get(path: "/users", parameters: [])
+        try await Task.sleep(for: .seconds(2))
+
+        return [
+            UserResponse(id: 0, name: "Tuki", username: "tuki", email: "tuki@mail.com")
+        ]
     }
 
 }

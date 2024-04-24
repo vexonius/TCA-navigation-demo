@@ -13,12 +13,6 @@ struct SettingsView: View {
                         store.send(.presentApps)
                     }
             }
-            .safeAreaInset(edge: .bottom) {
-                if let notification = store.notification {
-                    Text(notification)
-                        .padding(.bottom, 24)
-                }
-            }
             .navigationTitle("Settings")
             .sheet(item: $store.scope(state: \.apps, action: \.apps)) { store in
                 AppsView(store: store)
