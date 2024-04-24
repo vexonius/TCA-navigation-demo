@@ -1,4 +1,5 @@
 import SwiftUI
+import MapKit
 import ComposableArchitecture
 
 struct AppView: View {
@@ -7,10 +8,7 @@ struct AppView: View {
 
     var body: some View {
         NavigationStack(path: $store.scope(state: \.router, action: \.router)) {
-            Button("Overview") {
-                store.send(.routeToOverview)
-            }
-            .navigationTitle("Home")
+            Button("Press me") { store.send(.routeToOverview) }
         } destination: { store in
             switch store.case {
             case .overview(let store):

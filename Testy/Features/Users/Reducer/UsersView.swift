@@ -14,7 +14,7 @@ struct UsersView: View {
 #Preview {
 
     UsersView(store: StoreOf<UsersReducer>(
-        initialState: UsersReducer.State(),
+        initialState: UsersReducer.State(users: []),
         reducer: UsersReducer.init))
 
 }

@@ -28,6 +28,11 @@
 		20FEA8A42BBAB6B500378178 /* Get in Frameworks */ = {isa = PBXBuildFile; productRef = 20FEA8A32BBAB6B500378178 /* Get */; };
 		20FEA8A62BBADA1800378178 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8A52BBADA1800378178 /* SessionDelegate.swift */; };
 		20FEA8A82BBAE51A00378178 /* BaseClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8A72BBAE51A00378178 /* BaseClientTests.swift */; };
+		20FEA8AB2BBB059700378178 /* UsersClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8AA2BBB059700378178 /* UsersClient.swift */; };
+		20FEA8AD2BBB061100378178 /* UsersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8AC2BBB061100378178 /* UsersProtocol.swift */; };
+		20FEA8B02BBB065700378178 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8AF2BBB065700378178 /* UserResponse.swift */; };
+		20FEA8B32BBB06EC00378178 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8B22BBB06EC00378178 /* User.swift */; };
+		20FEA8B62BBB099800378178 /* UsersReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FEA8B52BBB099800378178 /* UsersReducerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,11 @@
 		20FEA8A02BBAB5FD00378178 /* BaseApiClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiClientProtocol.swift; sourceTree = "<group>"; };
 		20FEA8A52BBADA1800378178 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
 		20FEA8A72BBAE51A00378178 /* BaseClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClientTests.swift; sourceTree = "<group>"; };
+		20FEA8AA2BBB059700378178 /* UsersClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersClient.swift; sourceTree = "<group>"; };
+		20FEA8AC2BBB061100378178 /* UsersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProtocol.swift; sourceTree = "<group>"; };
+		20FEA8AF2BBB065700378178 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		20FEA8B22BBB06EC00378178 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		20FEA8B52BBB099800378178 /* UsersReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersReducerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +130,8 @@
 		201C28762BB5BFA700ACB78E /* Users */ = {
 			isa = PBXGroup;
 			children = (
-				20E71DDE2BB4CCE000CF45A2 /* UsersReducer.swift */,
-				202AE47C2BB5E4D600642416 /* UsersView.swift */,
+				20FEA8B42BBB085500378178 /* Reducer */,
+				20FEA8A92BBB058A00378178 /* Client */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -181,6 +191,7 @@
 			children = (
 				2093C4EF2BB1AE3600B5A430 /* TestyTests.swift */,
 				20FEA8A72BBAE51A00378178 /* BaseClientTests.swift */,
+				20FEA8B52BBB099800378178 /* UsersReducerTests.swift */,
 			);
 			path = TestyTests;
 			sourceTree = "<group>";
@@ -221,6 +232,42 @@
 				201C28742BB5BF8B00ACB78E /* Overview */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		20FEA8A92BBB058A00378178 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				20FEA8AE2BBB064A00378178 /* Responses */,
+				20FEA8AA2BBB059700378178 /* UsersClient.swift */,
+				20FEA8AC2BBB061100378178 /* UsersProtocol.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		20FEA8AE2BBB064A00378178 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				20FEA8AF2BBB065700378178 /* UserResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		20FEA8B12BBB06E200378178 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20FEA8B22BBB06EC00378178 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		20FEA8B42BBB085500378178 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				20E71DDE2BB4CCE000CF45A2 /* UsersReducer.swift */,
+				202AE47C2BB5E4D600642416 /* UsersView.swift */,
+				20FEA8B12BBB06E200378178 /* Models */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,13 +416,17 @@
 				20E71DE72BB557E300CF45A2 /* SettingsView.swift in Sources */,
 				20FEA8A62BBADA1800378178 /* SessionDelegate.swift in Sources */,
 				209E383C2BB8732600BD7D19 /* BaseApiClient.swift in Sources */,
+				20FEA8AD2BBB061100378178 /* UsersProtocol.swift in Sources */,
 				20E71DDF2BB4CCE000CF45A2 /* UsersReducer.swift in Sources */,
 				20E71DE52BB556AB00CF45A2 /* SettingsReducer.swift in Sources */,
 				20E71DD82BB4B5C700CF45A2 /* AppReducer.swift in Sources */,
 				20FEA8A12BBAB5FD00378178 /* BaseApiClientProtocol.swift in Sources */,
 				202AE47B2BB5E47C00642416 /* AppsView.swift in Sources */,
+				20FEA8AB2BBB059700378178 /* UsersClient.swift in Sources */,
+				20FEA8B32BBB06EC00378178 /* User.swift in Sources */,
 				20E71DE32BB4D14200CF45A2 /* OverviewView.swift in Sources */,
 				202AE47D2BB5E4D600642416 /* UsersView.swift in Sources */,
+				20FEA8B02BBB065700378178 /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +436,7 @@
 			files = (
 				2093C4F02BB1AE3600B5A430 /* TestyTests.swift in Sources */,
 				20FEA8A82BBAE51A00378178 /* BaseClientTests.swift in Sources */,
+				20FEA8B62BBB099800378178 /* UsersReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,9 +692,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.etino.TestyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Testy;
 			};
 			name = Debug;
@@ -657,9 +712,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.etino.TestyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = Testy;
 			};
 			name = Release;

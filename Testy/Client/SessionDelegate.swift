@@ -7,6 +7,8 @@ class SessionDelegate: APIClientDelegate, DependencyKey {
     static var liveValue: any APIClientDelegate = SessionDelegate()
     static var testValue: any APIClientDelegate = SessionDelegate()
 
+    var token = ""
+
     func client(
         _ client: APIClient,
         shouldRetry task: URLSessionTask,
@@ -23,8 +25,7 @@ class SessionDelegate: APIClientDelegate, DependencyKey {
     }
 
     func client(_ client: APIClient, willSendRequest request: inout URLRequest) async throws {
-        let token = ""
-        request.setValue("Bearer ", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
     }
 
 }
