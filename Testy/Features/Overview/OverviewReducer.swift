@@ -10,21 +10,30 @@ struct OverviewReducer {
 
     }
 
-    enum Action: Equatable {
+    enum Action: Equatable, ViewAction {
 
         case pop
-        case presentSettings
+        case view(View)
         case settings(PresentationAction<SettingsReducer.Action>)
+
+        enum View {
+
+            case popTap
+            case settingsTap
+
+        }
 
     }
 
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
-            case .presentSettings:
+            case .view(.settingsTap):
                 state.settings = SettingsReducer.State()
 
                 return .none
+            case .view(.popTap):
+                return .send(.pop)
             default:
                 return .none
             }

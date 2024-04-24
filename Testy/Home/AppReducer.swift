@@ -15,18 +15,24 @@ struct AppReducer {
         var toggle = false
         var notification: String?
 
-
         var router = StackState<AppRouter.State>()
 
     }
 
-    enum Action: Equatable, BindableAction {
+    enum Action: Equatable, BindableAction, ViewAction {
 
         case binding(BindingAction<State>)
+        case view(View)
 
         case routeToOverview
         case pop
         case router(StackAction<AppRouter.State, AppRouter.Action>)
+
+        enum View {
+
+            case overviewTap
+
+        }
 
     }
 
@@ -34,7 +40,7 @@ struct AppReducer {
         BindingReducer()
         Reduce<State, Action> { state, action in
             switch action {
-            case .routeToOverview:
+            case .view(.overviewTap):
                 state.router.append(.overview(.init()))
 
                 return .run { send in

@@ -1,6 +1,7 @@
 import SwiftUI
 import ComposableArchitecture
 
+@ViewAction(for: OverviewReducer.self)
 struct OverviewView: View {
 
     @Bindable var store: StoreOf<OverviewReducer>
@@ -9,11 +10,11 @@ struct OverviewView: View {
         VStack(spacing: 16) {
             Text("Pop")
                 .onTapGesture {
-                    store.send(.pop)
+                    send(.popTap)
                 }
             Text("Settings")
                 .onTapGesture {
-                    store.send(.presentSettings)
+                    send(.settingsTap)
                 }
         }
         .sheet(item: $store.scope(state: \.settings, action: \.settings)) { store in

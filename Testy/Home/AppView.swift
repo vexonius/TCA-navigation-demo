@@ -2,13 +2,18 @@ import SwiftUI
 import MapKit
 import ComposableArchitecture
 
+@ViewAction(for: AppReducer.self)
 struct AppView: View {
 
     @Bindable var store: StoreOf<AppReducer>
 
     var body: some View {
         NavigationStack(path: $store.scope(state: \.router, action: \.router)) {
-            Button("Press me") { store.send(.routeToOverview) }
+
+            Button("Press me") {
+                send(.overviewTap)
+            }
+
         } destination: { store in
             switch store.case {
             case .overview(let store):
